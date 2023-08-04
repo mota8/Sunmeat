@@ -1,8 +1,45 @@
-body{
+body {
     list-style-type: none;
 }
 
-.listStryle{
+.listStryle {
     list-style-type: none;
     text-decoration: none;
+}
+
+.borderbox {
+    border: 1.5px solid rgb(180, 178, 178);
+    border-radius: 10px;
+}
+
+.borderbox2 {
+    border: 1px solid rgb(118, 116, 116);
+}
+
+.borderboxtop {
+    border-top: 0;
+    border-left: 1.5px solid rgb(180, 178, 178);
+    border-right: 1.5px solid rgb(180, 178, 178);
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: 300;
+    display: flex;
+}
+
+.borderbottom {
+    border-bottom: 1px solid gray;
+}
+
+.borderbottom2:hover {
+    border-bottom: 2px solid rgb(0, 153, 255);
+    transition: all .2s;
+}
+
+.width80 {
+    width: 95%;
+}
+.bordertop{
+    border-top: 1px solid rgb(118, 116, 116);
 }

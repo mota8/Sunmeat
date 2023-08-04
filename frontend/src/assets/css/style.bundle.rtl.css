@@ -20,6 +20,7 @@
 }
 
 :root {
+  --gray2: #69677b;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -32,7 +33,7 @@
   --cyan: #17a2b8;
   --white: #ffffff;
   --gray: #7E8299;
-  --gray-dark: #3F4254;
+  --gray-dark: #2f313c;
   --primary: #3699FF;
   --secondary: #E4E6EF;
   --success: #1BC5BD;
