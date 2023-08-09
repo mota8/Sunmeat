@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import image1 from '../assets/media/images/Group 3 (1).svg';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 export default function Navbar() {
   const [pathname, setPathName] = useState("")
 
@@ -12,9 +15,9 @@ export default function Navbar() {
 
   return (
     <div className=''>
-      <div className='borderbottom mb-10 h-50px d-flex justifyy-content-aruond mb-1 '>
+      <div className='borderbottom h-50px d-flex justifyy-content-aruond mb-1 '>
         <div className="col-6 d-flex align-items-center " >
-            <div className="d-block d-md-none ml-3">همبرگر منو</div>
+          <div className="d-block d-md-none ml-3">همبرگر منو</div>
           <div className="ml-100 w-md-100 d-flex justify-content-between ">
           </div>
           <ul className='row d-none d-md-flex'>
@@ -29,20 +32,20 @@ export default function Navbar() {
           <span className='borderbottom2 px-10 pb-5 mt-5 px-10 cursor-pointer text-hover-primary d-none d-md-flex'>قوانین</span>
         </div>
       </div>
-      <div className='row  d-flex justify-content-center'>
-                    <div className='col-3 d-flex justify-content-center align-items-center p-3 d-none d-md-black'>
-                        <img className='d-none d-md-flex' src={image1} alt="logo" />
-                    </div>
-                    <div className='col-6 bg-warning d-flex justify-content-center align-items-center p-3'>
-                        <input type='text' value={"search"} />
-                    </div>
-                    <div className='col-3 d-flex justify-content-center p-10 align-items-center p-3'>
-                        <button className='btn btn-outline-primary mx-1'><i className='fas fa-shopping-basket'></i></button>
-                        <button className='btn btn-outline-primary mx-1'><i className='far fa-user'></i>ورود/ثبت نام</button>
-                    </div>
+      <div className='row d-flex justify-content-center borderbottom2'>
+        <div className='col-3 d-flex justify-content-center align-items-center p-3 d-none d-md-black'>
+        <Link to='/'> <img className='d-none d-md-flex' src={image1} alt="logo" /></Link>
+        </div>
+        <div className='col-6 d-flex justify-content-center align-items-center p-3'>
+         
+            <TextField fullWidth  id="outlined-basic" label="جستجو" variant="outlined" />
+        </div>
+        <div className='col-3 d-flex justify-content-center p-10 align-items-center p-3'>
+          <button className='btn btn-outline-primary mx-1'><i className='fas fa-shopping-basket'></i></button>
+          <button className='btn btn-outline-primary mx-1'><i className='far fa-user'></i>ورود/ثبت نام</button>
+        </div>
 
-                </div>
-
+      </div>
     </div>
   )
 }

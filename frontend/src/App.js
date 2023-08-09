@@ -22,17 +22,10 @@ function App() {
       <Router>
 
         <Switch>
-
-          {/* <Route path="/AboutUs" > <AboutUs /> </Route>
-          <Route path="/ContactUs" > <ContactUs /> </Route>
-          <Route path="/Terms" > <Terms /> </Route>
-          <Route path="/Login" > <Login /> </Route>
-          <Route path="/singup" > <Singup /> </Route> */}
           <Route path="/ProductDetails/:ProductId" > <ProductDetails /> </Route>
           <Route path="/ContactUs" > <ContactUs /> </Route>
           <Route path="/Aaaa" > <Aaaa /> </Route>
           <Route path="/" > <HomeWeb /> </Route>
-
         </Switch>
 
       </Router>
