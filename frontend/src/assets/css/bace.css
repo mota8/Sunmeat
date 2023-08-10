@@ -30,6 +30,7 @@ body {
 
 .borderbottom {
     border-bottom: 1px solid gray;
+
 }
 
 .borderbottom2:hover {
@@ -37,9 +38,28 @@ body {
     transition: all .2s;
 }
 
+.borderbottom3 {
+    color: rgb(109, 115, 115);
+}
+
+.borderbottom3:hover {
+    color:rgb(0, 153, 255);
+    transition: all .2s;
+}
+
 .width80 {
     width: 95%;
 }
-.bordertop{
+
+.bordertop {
     border-top: 1px solid rgb(118, 116, 116);
+}
+
+.borderbottom2 {
+    border-bottom: 1px solid rgb(118, 116, 116);
+}
+
+.borderLeftright {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
 }
