@@ -3,11 +3,16 @@ import Content from '../../components/Content'
 import { useParams } from 'react-router-dom';
 import image1 from '../../assets/media/images/Untitled.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import image3 from '../../assets/media/images/info-circle.svg'
+import image2 from '../../assets/media/images/Group 74.png'
+import image4 from '../../assets/media/images/Sunmeat.svg'
+import image5 from '../../assets/media/images/element-1.svg'
+import image6 from '../../assets/media/images/like-1.svg'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 export default function ProductDetails() {
     const [price, setPrice] = useState(2)
-    const [number, setNumber] = useState( 1  )
+    const [number, setNumber] = useState(1)
 
     const data = useParams();
     useEffect(() => {
@@ -17,11 +22,10 @@ export default function ProductDetails() {
     const changeHandler = (action) => {
         if (action === "up") {
             setNumber(number + 1)
-            setPrice ( price * number )
+            setPrice(price * number)
 
         } else if (action === "down") {
-            if (    )
-                setNumber(number - 1)
+            setNumber(number - 1)
         }
     }
     return (
@@ -68,8 +72,10 @@ export default function ProductDetails() {
 
                     <div className="col-3 w-100 h-500px p-10 ">
                         <div style={{ backgroundColor: "#f2f2f2", border: '1px solid #d9d9d9' }} className='rounded-xl p-5 h-100 w-100 position-relative overflow-hidden d-flex align-items-between flex-column'>
-                            <div className='position-absolute top-0 right-0 bg-dark  text-warning p-4'>25درصد تخفیف</div>
-                            <div className='h-50px'><img src='' alt='Image' />Image</div>
+                            <div className='position-absolute top-0 right-0   text-warning'>
+                                <img src={image2    } alt="" className="w-100" />
+                            </div>
+                            <div className='h-50px'><img src={image4} alt='sunmeat' /></div>
                             <div className='text-muted d-flex h-100 align-items-start justify-content-around flex-column'>
                                 <div><i className='fa fa-circle mx-2'></i> نحوه ارسال</div>
                                 <div><i className='fa fa-circle text-dark mx-2'></i>آماده سازی محصول</div>
@@ -79,7 +85,6 @@ export default function ProductDetails() {
                                 <span className="h5  mr-4 text-primary">4/1</span>
                                 <i className='h3 px-1 fas fa-star text-warning'></i>
                                 <i className='h3 px-1 fas fa-star text-warning'></i>
-                                <i className='h3 px-1 fas fa-star text-warning'></i>
                                 <i className='h3 px-1 far fa-star text-warning'></i>
                                 <i className='h3 px-1 far fa-star text-warning'></i>
                                 <span className=" ml-2 text-primary">21دیدگاه</span>
@@ -87,7 +92,9 @@ export default function ProductDetails() {
                             </div>
                             <div className=' border border-bottom-0 border-left-0 border-right-0 border-dark d-flex justify-content-between w-100 align-items-center h-100'>
                                 <div >
-                                    <i class="fas fa fa-interrogation"></i>
+                                    <i class="">
+                                        <img src={image3} alt="" className='w-100' />
+                                    </i>
                                 </div>
                                 <div className='d-flex align-items-center h-100 justify-content-between '>
                                     <i onClick={e => changeHandler("up")} class="h2 text-muted far fa fa-arrow-circle-up"></i>
@@ -378,9 +385,9 @@ export default function ProductDetails() {
                         <div className="mt-4 mb-6 ">
                         </div>
                         <div className='d-flex'>
-                            <span className='d-flex'>sas</span>
                             <ul className="listStryle d-flex">
-                                <li className="px-5 h4  borderbottom3 ">مرتب سازی :</li>
+                                <li className=""><img src={image5} alt="" className="w-100" /></li>
+                                <li className="px-5 h4 ">مرتب سازی :</li>
                                 <li className="px-5 h4  borderbottom3 ">کیفیت</li>
                                 <li className="px-5 h4  borderbottom3 ">قیمت و ارزش خرید </li>
                                 <li className="px-5 h4  borderbottom3 ">حجم</li>
@@ -396,7 +403,9 @@ export default function ProductDetails() {
                         </div>
                         <div className="w-100">
                             <div className=" my-10  ">
-                                <span className="px-5 ">sd</span>
+                                <span className="px-5 ">
+                                    <img src={image6} alt="" className="" />
+                                </span>
                                 <span className="text-muted">پیشنهاد میکنم</span>
                                 <p className='mt-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia qui recusandae iure sunt nesciunt quod, labore, et, aperiam consequatur est perferendis sequi quo! Doloremque, vel labore ratione a cupiditate velit!</p>
                             </div>
@@ -409,7 +418,9 @@ export default function ProductDetails() {
                         </div>
                         <div className="w-100">
                             <div className=" my-10  ">
-                                <span className="px-5 ">sd</span>
+                            <span className="px-5 ">
+                                    <img src={image6} alt="" className="" />
+                                </span>
                                 <span className="text-muted">پیشنهاد میکنم</span>
                                 <p className='mt-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia qui recusandae iure sunt nesciunt quod, labore, et, aperiam consequatur est perferendis sequi quo! Doloremque, vel labore ratione a cupiditate velit!</p>
                             </div>
@@ -424,8 +435,10 @@ export default function ProductDetails() {
 
                     <div className="col-3 w-100 h-500px p-10 ">
                         <div style={{ backgroundColor: "#f2f2f2", border: '1px solid #d9d9d9' }} className='rounded-xl p-5 h-100 w-100 position-relative overflow-hidden d-flex align-items-between flex-column'>
-                            <div className='position-absolute top-0 right-0 bg-dark  text-warning p-4'>25درصد تخفیف</div>
-                            <div className='h-50px'><img src='' alt='Image' />Image</div>
+                            <div className='position-absolute top-0 right-0   text-warning'>
+                                <img src={image2} alt="" className="w-100" />
+                            </div>
+                            <div className='h-50px'><img src={image4} alt='sunmeat' /></div>
                             <div className='text-muted d-flex h-100 align-items-start justify-content-around flex-column'>
                                 <div><i className='fa fa-circle mx-2'></i> نحوه ارسال</div>
                                 <div><i className='fa fa-circle text-dark mx-2'></i>آماده سازی محصول</div>
@@ -443,7 +456,9 @@ export default function ProductDetails() {
                             </div>
                             <div className=' border border-bottom-0 border-left-0 border-right-0 border-dark d-flex justify-content-between w-100 align-items-center h-100'>
                                 <div >
-                                    <i class="fas fa fa-interrogation"></i>
+                                    <i class="">
+                                        <img src={image3} alt="" className='w-100' />
+                                    </i>
                                 </div>
                                 <div className='d-flex  align-items-center h-100 justify-content-between '>
                                     <i onClick={(e) => setNumber(number + 1)} class="h1 text-muted far fa fa-arrow-circle-up"></i>

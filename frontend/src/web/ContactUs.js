@@ -4,8 +4,7 @@ import Content from '../components/Content'
 export default function ContactUs() {
     return (
         <Content>
-
-            <div>   
+            <div>
 
             </div>
         </Content>

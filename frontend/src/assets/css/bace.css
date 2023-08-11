@@ -25,12 +25,19 @@ body {
 .line-through {
     text-decoration: line-through;
     color: 300;
+
     display: flex;
 }
 
 .borderbottom {
     border-bottom: 1px solid gray;
 
+
+}
+
+.font2rem {
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 .borderbottom2:hover {
@@ -43,7 +50,7 @@ body {
 }
 
 .borderbottom3:hover {
-    color:rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
     transition: all .2s;
 }
 
@@ -59,7 +66,51 @@ body {
     border-bottom: 1px solid rgb(118, 116, 116);
 }
 
+.borderbottom6 {
+    border-bottom: 1px solid rgb(118, 116, 116);
+}
+
+.borderbottom7 {
+    border-bottom: 3px solid rgb(118, 116, 116);
+}
+
 .borderLeftright {
     border-left: 1px solid gray;
     border-right: 1px solid gray;
+}
+
+.color1 {
+    color: #e0e0e0;
+    background-color: #e0e0e0;
+}
+
+.bordertop2 {
+    border-top: 5px solid #f56606;
+}
+
+.bordertop3 {
+    border: none;
+}
+
+.margintop20 {
+    margin-top: -20px;
+}
+
+.btnhover {
+    color: rgba(0, 0, 0, 0.755);
+    background: rgba(255, 2, 2, 0.733)000;
+}
+
+.btnhover:hover {
+    color: rgb(0, 0, 0);
+    background: rgba(255, 2, 2, 0.896)000;
+}
+
+.fontsizebold {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.fontsize {
+    font-size: 10px;
 }
