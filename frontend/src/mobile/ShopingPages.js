@@ -34,7 +34,7 @@ const ShopingPages = () => {
                {
                    ff.map(x => {
                        return (
-                                    <div className=" row width80 m-auto  pb-10 ">
+                                    <div className=" row width80 m-auto pt-5  pb-5 border80 ">
                                     <div className="col-3 w-100 px-0 d-flex justify-content align-items-center">
                                         <div className="w-100 h-100px bg-light rounded-xl "></div>
                                     </div>

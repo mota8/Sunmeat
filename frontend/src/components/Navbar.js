@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className='borderbottom h-50px d-flex justifyy-content-aruond mb-1 '>
         <div className="col-6 d-flex align-items-center " >
           <div className="d-block d-md-none ml-3">
-          <Link to='/HomeMobile'>  همبرگر </Link>
+          <Link to='/Mypages'>  همبرگر </Link>
 
           </div>
           <div className="ml-100 w-md-100 d-flex justify-content-between ">

@@ -4,7 +4,7 @@ import image2 from '../assets/media/images/Sunmeat.svg'
 import image3 from '../assets/media/images/Untitled-1.png'
 import Content1 from './components/Content1';
 
-const HomeMobile = () => {
+const AbutSunmeat = () => {
     return (
         <Content1>
             <div>
@@ -66,4 +66,4 @@ const HomeMobile = () => {
     );
 };
 
-export default HomeMobile;
+export default AbutSunmeat;

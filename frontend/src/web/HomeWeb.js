@@ -91,7 +91,7 @@ export default function HomeWeb() {
                     </Swiper>
                 </div>
 
-                <div className='row my-2 px-0 d-none d-md-block'>
+                <div className='row my-2 px-0 d-none d-md-flex'>
                     <div className='col-4 py-0 pl-0'>
                         <img src={image10} alt="" className="w-100 rounded-xl" />
                     </div>
@@ -104,7 +104,7 @@ export default function HomeWeb() {
 
                 </div>
 
-                <div className='row my-2  '>
+                <div className='row my-2'>
                     <div className=' d-flex justify-content-between w-100'>
                         <span className='h2 font-weight-bolder p-5w-100 '>پیش فروش محصولات</span>
                         <span className='h4  p-5'><u>همه محصولات</u> </span>

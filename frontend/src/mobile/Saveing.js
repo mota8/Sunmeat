@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import image1 from '../assets/media/images/Untitled-1.png';
 
-const Bought = () => {
-    const ff = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const Saveing = (children) => {
+    const ff = [1, 2, 3]
     const [pathname, setPathName] = useState("")
 
     useEffect(() => {
@@ -13,32 +13,28 @@ const Bought = () => {
 
     return (
         <Content1>
-
             <div>
-                <div className="bg-info w-100 h-200px d-flex justify-content-between">
+                <div className="bg-info w-100  d-flex justify-content-between">
                     <div className="w-100 h-200px  d-flex flex-column justify-content-center text-center">
                         <div className="mt-5 text-light"><span className="h3">اطلاعیه محصول شارژ شده</span></div>
                         <div className="mt-7 text-light"><p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint at atque rem ex odit alias!</p></div>
                     </div>
-                    <div className="w-100 h-200px ">
+                    <div className=" row width80 m-auto ">
                         <img src={image1} alt="" className="w-100" />
                     </div>
                 </div>
-                <div className="w-100 mb-15 d-flex justify-content-around align-items-start " style={{ marginTop: "-25px" }}>
-                    <Link to='/ShopingPages'><button className=" btn  btn-bg-danger  text-dark  rounded-lg p-5 h3"><span className={`${pathname === "/ShopingPages" ? "borderbottom7" : "bordertop3"} `}>سبد خرید</span> </button></Link>
-                    <Link to='/Sending'><button className=" btn  btn-bg-danger  text-dark  rounded-lg p-5 h3"><span className={`${pathname === "/Sending" ? "borderbottom7" : "bordertop3"} `}> درحال ارسال</span> </button></Link>
-                    <Link to='/Bought'><button className=" btn  btn-bg-danger  text-dark  rounded-lg p-5 h3"><span className={`${pathname === "/Bought" ? "borderbottom7" : "bordertop3"} `}>  خریداری شده</span> </button></Link>
-
+                <div className="w-100 mb-10 d-flex justify-content-around align-items-start " style={{ marginTop: "-25px" }}>
+                    <Link to='/Saveing'><button className=" btn  btn-bg-danger  text-dark  rounded-lg p-5 h3"><span className={`${pathname === "/Saveing" ? "borderbottom7" : "bordertop3cmmv"} `}> ذخیره شده ها</span> </button></Link>
                 </div>
-                <div className="width80 pb-40 bg-secondary m-auto   py-5 rounded-xl d-flex- justify-content-center">
+                <div className="width80 pb-30 bg-secondary m-auto  py-5 rounded-xl d-flex- justify-content-center">
                     {
                         ff.map(x => {
                             return (
-                                <div className=" row width80 m-auto  pt-5  pb-5 border80">
-                                    <div className="col-4 w-100 px-0 d-flex justify-content align-items-center">
+                                <div className=" row width80 m-auto pt-5  pb-5 border80 ">
+                                    <div className="col-3 w-100 px-0 d-flex justify-content align-items-center">
                                         <div className="w-100 h-100px bg-light rounded-xl "></div>
                                     </div>
-                                    <div className="col-8">
+                                    <div className="col-6">
                                         <div className="mt-2"><span className="h3">مرغ منجمد زیرک</span></div>
                                         <div className="mt-2">
                                             <span className=" mr-1 text-primary">4/1</span>
@@ -60,6 +56,11 @@ const Bought = () => {
                                             <i className='h6 fa fa-circle '></i><span className="ml-2 ">طبقه برند  :</span> <span className="text-dark">پروتئین،مرغ</span>
                                         </div>
                                     </div>
+                                    <div className="col-3  d-flex flex-column mt-6 justify-content align-items-center">
+                                        <div className="w-100 h-50 bg-light mb-5 rounded-xl"></div>
+                                        <span className="">333.333</span>
+                                        <span className="">تومان</span>
+                                    </div>
                                 </div>
 
 
@@ -68,10 +69,13 @@ const Bought = () => {
                     }
 
 
+
                 </div>
-                </div>
+
+            </div>
+
         </Content1>
     );
 };
 
-export default Bought;
+export default Saveing;

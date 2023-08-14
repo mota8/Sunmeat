@@ -33,7 +33,7 @@ const Sending = ({ children }) => {
                     {
                         ff.map(x => {
                             return (
-                                <div className=" row width80 m-auto  pb-10 ">
+                                <div className=" row width80 m-auto pt-5  pb-5 border80 ">
                                     <div className="col-2 w-100   px-0 d-flex justify-content align-items-center">
                                         <div className="w-100 h-50 bg-light rounded-xl "></div>
                                     </div>
@@ -61,9 +61,9 @@ const Sending = ({ children }) => {
                                     </div>
                                     <div className="col-4  d-flex justify-content align-items-center ">
                                         <img className=' ' style={{ position: 'absolute', right: '0' }} src={image2} alt="" />
-                                        <div className="w-100 px-0">
-                                            <span className="fontsizebold pl-4">اماده سازی محصول</span>
-                                            <div className="my-9 ml-3 pt-4"><span className="fontsize">ارسال به پیک</span></div>
+                                        <div className="w-100 mt-1 px-0">
+                                            <span className="fontsizebold"style={{marginRight:'11px'}}>اماده سازی </span>
+                                            <div className="my-8 ml-3 pt-4"><span className="fontsize">ارسال به پیک</span></div>
                                             <div className="ml-3 "><span className="fontsize">تحویل به مشتری </span></div>
                                         </div>
                                     </div>
