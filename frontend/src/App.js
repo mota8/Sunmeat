@@ -12,7 +12,7 @@ import ShopingPages from './mobile/ShopingPages'
 import Sending from './mobile/Sending';
 import Notifications from './mobile/Notifications';
 import SeeAll from './mobile/SeeAll';
-
+import Homemobile from './mobile/Homemobile';
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,25 +26,28 @@ import AwaitingReview from './mobile/AwaitingReview';
 import Saveing from './mobile/Saveing';
 import Discount from './mobile/Discount';
 import RecordFeedback from './RecordFeedback';
+import Style from '../src/mobile/Style';
 function App() {
   return (
     <div>
       <Router>
 
         <Switch>
-          
-        <Route path="/RecordFeedback" > <RecordFeedback /> </Route>
-        <Route path="/Discount" > <Discount /> </Route>
-        <Route path="/SeeAll" > <SeeAll /> </Route>
-        <Route path="/Saveing" > <Saveing /> </Route>
-        <Route path="/AwaitingReview" > <AwaitingReview /> </Route>
-        <Route path="/Notifications" > <Notifications /> </Route>
-        <Route path="/Bought" > <Bought /> </Route>
-        <Route path="/Sending" > <Sending /> </Route>
-        <Route path="/ShopingPages" > <ShopingPages /> </Route>
-        <Route path="/Mypages" > <Mypages /> </Route>
-        <Route path="/AbutSunmeat" > <AbutSunmeat /> </Route>
-        <Route path="/ProductDetails/:ProductId" > <ProductDetails /> </Route>
+
+          <Route path="/style" > <Style /> </Route>
+          <Route path="/Homemobile" > <Homemobile /> </Route>
+          <Route path="/RecordFeedback" > <RecordFeedback /> </Route>
+          <Route path="/Discount" > <Discount /> </Route>
+          <Route path="/SeeAll" > <SeeAll /> </Route>
+          <Route path="/Saveing" > <Saveing /> </Route>
+          <Route path="/AwaitingReview" > <AwaitingReview /> </Route>
+          <Route path="/Notifications" > <Notifications /> </Route>
+          <Route path="/Bought" > <Bought /> </Route>
+          <Route path="/Sending" > <Sending /> </Route>
+          <Route path="/ShopingPages" > <ShopingPages /> </Route>
+          <Route path="/Mypages" > <Mypages /> </Route>
+          <Route path="/AbutSunmeat" > <AbutSunmeat /> </Route>
+          <Route path="/ProductDetails/:ProductId" > <ProductDetails /> </Route>
           <Route path="/ContactUs" > <ContactUs /> </Route>
           <Route path="/" > <HomeWeb /> </Route>
         </Switch>

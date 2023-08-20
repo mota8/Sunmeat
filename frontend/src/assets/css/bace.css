@@ -83,7 +83,9 @@ body {
     color: #e0e0e0;
     background-color: #e0e0e0;
 }
-
+.textcolor1{
+    color: #a6a6a6;
+}
 .bordertop2 {
     border-top: 5px solid #f56606;
 }
@@ -108,15 +110,78 @@ body {
 
 .fontsizebold {
     font-size: 10px;
+    overflow: ;
     font-weight: bold;
 }
 
 .fontsize {
     font-size: 10px;
 }
+.fontsize2 {
+    font-size: 7px;
+}
 .border80{
+            
     border-bottom: 1px solid gray;
 }
 .color2{
     background-color: rgb(195, 193, 193);
 }
+.color3{
+    background-color: rgb(121, 121, 121);
+}
+.boxblur{
+    filter: blur(2px);
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .autoplay-progress {
+    position: absolute;
+    right: 3px;
+    bottom: 2px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+  
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 2px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  

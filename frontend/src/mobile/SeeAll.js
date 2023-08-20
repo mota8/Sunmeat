@@ -9,17 +9,17 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 const SeeAll = () => {
-    const ff = [1,3,4,5,6,7,8,9,]
+    const ff = [1, 3, 4, 5, 6, 7, 8, 9,]
     const [pathname, setPathName] = useState("")
     const location = useLocation()
-    const data =location.state
+    const data = location.state
     useEffect(() => {
         setPathName(window.location.pathname)
     }, [])
 
     return (
         <Content1>
-            
+
             <div>
                 <div className="bg-info w-100  d-flex justify-content-between  ">
                     <div className="w-100 d-flex flex-column justify-content-center text-center">
@@ -31,18 +31,18 @@ const SeeAll = () => {
                     </div>
                 </div>
 
-                                <div className="row w-100 mt-10 mb-10 ">
-                                    <div className="col-4 w-100 d-flex justify-content-center align-items-center ">
-                                        <div className="w-100 h-50px ml-5 bg-dark rounded-xl  d-flex justify-content-center align-items-center">
-                                            <img src={image2} alt="" className=" w-75 " />
-                                        </div>
-                                    </div>
-                                    <div className="col-5 "></div>
-                                </div>
+                <div className="row w-100 mt-10 mb-10 ">
+                    <div className="col-4 w-100 d-flex justify-content-center align-items-center ">
+                        <div className="w-100 h-50px ml-5 bg-dark rounded-xl  d-flex justify-content-center align-items-center">
+                            <img src={image2} alt="" className=" w-75 " />
+                        </div>
+                    </div>
+                    <div className="col-5 "></div>
+                </div>
                 {
                     ff.map(x => {
                         return (
-                                <div className="bg- mb-30 ">
+                            <div className="bg- mb-30 ">
                                 <div className="row w-100 ml-0 ">
                                     <div className="col-4 d-flex flex-column align-items-center justify-content-center">
                                         <div className="color2 w-100 h-100px rounded-xl" style={{ position: 'relative' }}>
@@ -83,9 +83,9 @@ const SeeAll = () => {
 
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
                         )
                     })

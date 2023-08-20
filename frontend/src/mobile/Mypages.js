@@ -38,12 +38,13 @@ const Mypages = () => {
                             <Link to='/ShopingPages'>  <div className="text-dark w-100 py-3 pl-5"><span className="h2"><img src={image5} alt="" className=" mr-5" />سبد خرید<img src={image2} alt="" className="w-30px ml-10" /></span></div></Link>
                             <Link to='/Saveing'><div className="text-dark w-100 py-3 pl-5"><span className="h2"><img src={image6} alt="" className="mr-3" /> ذخیره شده ها<img src={image2} alt="" className="w-30px" /></span></div></Link>
                             <Link to='/Notifications'> <div className="text-dark w-100 py-3 pl-5"><span className="h2"><img src={image7} alt="" className="mr-3" /> اطلاعیه<img src={image2} alt="" className="w-30px" /></span></div></Link>
-                            <div className="text-dark w-100 py-3 pl-5"><span className="h2"><img src={image8} alt="" className="mr-3" />اطلاعات کاربری <img src={image2} alt="" className="w-30px" /></span></div>
+                            <Link to='/RecordFeedback'> <div className="text-dark w-100 py-3 pl-5"><span className="h2"><img src={image7} alt="" className="mr-3" />اطلاعات کاربری <img src={image2} alt="" className="w-30px" /></span></div></Link>
+
                         </div>
                         <div className="w-100 h-150px ">
                             <div className="text-dark w-100 py-3 pl-5"><span className="h2"> راهنمایی و شرایط<img src={image3} alt="" className="ml-2 w-30px" /></span></div>
                             <Link to='/abutSunmeat'>  <div className="text-dark w-100 py-3 pl-5"><span className="h2">درباره sunmeat </span></div></Link>
-                            <div className="text-dark w-100 py-3 pl-5"><span className="h2"> ثبت بازخورد</span></div>
+                            <Link to='/abutSunmeat'> <div className="text-dark w-100 py-3 pl-5"><span className="h2"> ثبت بازخورد</span></div></Link>
                             <div className="w-100 h-50px bg-secondary rounded-xl d-flex justify-content-around ">
                                 <div className="w-100 h-40 "></div>
                                 <div className="w-100 h-40  d-flex justify-content-end align-items-center">
